@@ -18,13 +18,13 @@ CentOS 7 OS repo problem and yum update error solved | رفع مشکل آپدی�
 
    ```bash
    # use curl (Only Iran)
-   sudo curl -fsSL https://raw.githubusercontent.com/arminkit/centos7-repo/iran/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
+   sudo curl -fsSL https://raw.githubusercontent.com/arminkit/centos7-repo/refs/heads/main/iran/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
    # use curl
-   sudo curl -fsSL https://raw.githubusercontent.com/arminkit/centos7-repo/other/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
+   sudo curl -fsSL https://raw.githubusercontent.com/arminkit/centos7-repo/refs/heads/main/other/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
    # or use wget (Only Iran)
-   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/iran/CentOS-Base.repo
+   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/refs/heads/main/iran/CentOS-Base.repo
    # or use wget
-   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/other/CentOS-Base.repo
+   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/refs/heads/main/other/CentOS-Base.repo
    ```
 
 #### Step 3: Clean YUM Cache
