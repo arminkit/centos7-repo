@@ -76,16 +76,16 @@ CentOS 7 OS repo problem and yum update error solved | رفع مشکل آپدی�
 
    ```ini
    [base]
-name=ITO-Repo CentOS-$releasever - Base
-baseurl=https://repo.ito.gov.ir/centos/7/os/$basearch/
-gpgcheck=0
-enabled=1
-#released updates
-[updates]
-name=ITO-Repo CentOS-$releasever - Updates
-baseurl=https://repo.ito.gov.ir/centos/$releasever/updates/$basearch/
-gpgcheck=0
-enabled=1
+   name=ITO-Repo CentOS-$releasever - Base
+   baseurl=https://repo.ito.gov.ir/centos/7/os/$basearch/
+   gpgcheck=0
+   enabled=1
+   #released updates
+   [updates]
+   name=ITO-Repo CentOS-$releasever - Updates
+   baseurl=https://repo.ito.gov.ir/centos/$releasever/updates/$basearch/
+   gpgcheck=0
+   enabled=1
    ```
 
   Replace the `baseurl` entries with the following vault URLs:
