@@ -22,9 +22,9 @@ CentOS 7 OS repo problem and yum update error solved | رفع مشکل آپدی�
    # use curl
    sudo curl -fsSL https://raw.githubusercontent.com/arminkit/centos7-repo/other/CentOS-Base.repo -o /etc/yum.repos.d/CentOS-Base.repo
    # or use wget (Only Iran)
-   # sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/iran/CentOS-Base.repo
+   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/iran/CentOS-Base.repo
    # or use wget
-   # sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/other/CentOS-Base.repo
+   sudo wget -O /etc/yum.repos.d/CentOS-Base.repo https://raw.githubusercontent.com/arminkit/centos7-repo/other/CentOS-Base.repo
    ```
 
 #### Step 3: Clean YUM Cache
@@ -92,18 +92,18 @@ CentOS 7 OS repo problem and yum update error solved | رفع مشکل آپدی�
 
    ```ini
    [base]
-name=CentOS-$releasever - Base
-baseurl=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/
-enabled=1
-gpgcheck=1
-gpgkey=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/RPM-GPG-KEY-CentOS-7
+   name=CentOS-$releasever - Base
+   baseurl=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/
+   enabled=1
+   gpgcheck=1
+   gpgkey=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/RPM-GPG-KEY-CentOS-7
  
-[updates]
-name=CentOS-$releasever - Updates
-baseurl=https://mirror.one3erver.com/centos/7.9.2009/updates/x86_64/
-enabled=1
-gpgcheck=1
-gpgkey=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/RPM-GPG-KEY-CentOS-7
+   [updates]
+   name=CentOS-$releasever - Updates
+   baseurl=https://mirror.one3erver.com/centos/7.9.2009/updates/x86_64/
+   enabled=1
+   gpgcheck=1
+   gpgkey=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/RPM-GPG-KEY-CentOS-7
    ```
 
    Save the file and exit the editor.
