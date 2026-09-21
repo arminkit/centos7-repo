@@ -92,18 +92,17 @@ CentOS 7 OS repo problem and yum update error solved | رفع مشکل آپدی�
 
    ```ini
    [base]
-   name=CentOS-$releasever - Base
-   baseurl=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/
-   enabled=1
-   gpgcheck=1
-   gpgkey=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/RPM-GPG-KEY-CentOS-7
- 
-   [updates]
-   name=CentOS-$releasever - Updates
-   baseurl=https://mirror.one3erver.com/centos/7.9.2009/updates/x86_64/
-   enabled=1
-   gpgcheck=1
-   gpgkey=https://mirror.one3erver.com/centos/7.9.2009/os/x86_64/RPM-GPG-KEY-CentOS-7
+name=ITO-Repo CentOS-$releasever - Base
+baseurl=http://mirror.stanford.edu/mirrors/centos/7/os/$basearch/
+gpgcheck=0
+enabled=1
+#released updates
+[updates]
+name=ITO-Repo CentOS-$releasever - Updates
+baseurl=http://mirror.stanford.edu/mirrors/centos/$releasever/updates/$basearch/
+gpgcheck=0
+enabled=1
+
    ```
 
    Save the file and exit the editor.
